@@ -1,1 +1,489 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan Fulan & Hani</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #eef5fb;
+      color: #263746;
+      line-height: 1.7;
+    }
+
+    section {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .cover {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        linear-gradient(rgba(20, 70, 110, 0.65), rgba(20, 70, 110, 0.65)),
+        linear-gradient(135deg, #8db8d8, #dcecf8);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover::before,
+    .cover::after {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 50%;
+    }
+
+    .cover::before {
+      top: -100px;
+      left: -100px;
+    }
+
+    .cover::after {
+      bottom: -100px;
+      right: -100px;
+    }
+
+    .cover-content {
+      max-width: 700px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .small-title {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .cover h1 {
+      font-size: 52px;
+      font-weight: normal;
+      margin-bottom: 15px;
+    }
+
+    .and {
+      font-size: 24px;
+      font-style: italic;
+      margin: 5px 0;
+    }
+
+    .cover-date {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    .open-button {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 13px 30px;
+      border: 1px solid white;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .open-button:hover {
+      background: white;
+      color: #24577d;
+    }
+
+    .intro {
+      background: #f8fbfe;
+    }
+
+    .ornament {
+      color: #477da5;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #24577d;
+      font-size: 32px;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    .names {
+      font-size: 35px;
+      color: #24577d;
+      margin: 25px 0;
+    }
+
+    .quote {
+      max-width: 650px;
+      margin: auto;
+      font-style: italic;
+      color: #60798c;
+    }
+
+    .event {
+      background: #e5f0f8;
+    }
+
+    .event-card {
+      max-width: 650px;
+      margin: 20px auto;
+      background: white;
+      padding: 35px 25px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(50, 90, 120, 0.12);
+    }
+
+    .event-card h3 {
+      color: #24577d;
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .event-card p {
+      margin: 7px 0;
+    }
+
+    .countdown {
+      background: #24577d;
+      color: white;
+    }
+
+    .countdown h2 {
+      color: white;
+    }
+
+    .timer {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .time-box {
+      background: rgba(255,255,255,0.15);
+      padding: 15px 20px;
+      border-radius: 12px;
+      min-width: 80px;
+    }
+
+    .time-box span {
+      display: block;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .location {
+      background: #f8fbfe;
+    }
+
+    .maps-button,
+    .rsvp-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      border-radius: 30px;
+      background: #24577d;
+      color: white;
+      text-decoration: none;
+    }
+
+    .closing {
+      background:
+        linear-gradient(rgba(20, 70, 110, 0.75), rgba(20, 70, 110, 0.75)),
+        linear-gradient(135deg, #8db8d8, #dcecf8);
+      color: white;
+    }
+
+    .closing h2 {
+      color: white;
+    }
+
+    footer {
+      background: #183e59;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .cover h1 {
+        font-size: 40px;
+      }
+
+      .names {
+        font-size: 29px;
+      }
+
+      h2 {
+        font-size: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- COVER -->
+  <section class="cover">
+    <div class="cover-content">
+
+      <div class="small-title">
+        The Wedding Of
+      </div>
+
+      <h1>Fulan</h1>
+
+      <div class="and">&</div>
+
+      <h1>Hani</h1>
+
+      <div class="cover-date">
+        13 Agustus 2025
+      </div>
+
+      <a href="#undangan" class="open-button">
+        Buka Undangan
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- PEMBUKA -->
+  <section class="intro" id="undangan">
+
+    <div class="ornament">❦</div>
+
+    <h2>Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
+
+    <p class="quote">
+      Dengan memohon rahmat dan ridho Allah SWT,
+      kami bermaksud mengundang Bapak/Ibu/Saudara/i
+      untuk hadir dalam acara pernikahan kami.
+    </p>
+
+    <div class="names">
+      Fulan & Hani
+    </div>
+
+    <p>
+      Merupakan suatu kehormatan dan kebahagiaan bagi kami
+      apabila Bapak/Ibu/Saudara/i berkenan hadir
+      dan memberikan doa restu.
+    </p>
+
+  </section>
+
+
+  <!-- ACARA AKAD -->
+  <section class="event">
+
+    <div class="ornament">✦</div>
+
+    <h2>Akad Nikah</h2>
+
+    <div class="event-card">
+
+      <h3>Akad Nikah</h3>
+
+      <p>📅 <strong>13 Agustus 2025</strong></p>
+
+      <p>⏰ <strong>08.00 WIB</strong></p>
+
+      <p>📍 <strong>Bandung</strong></p>
+
+    </div>
+
+  </section>
+
+
+  <!-- RESEPSI -->
+  <section class="event">
+
+    <div class="ornament">❦</div>
+
+    <h2>Resepsi Pernikahan</h2>
+
+    <div class="event-card">
+
+      <h3>Resepsi</h3>
+
+      <p>📅 <strong>14 Agustus 2026</strong></p>
+
+      <p>⏰ <strong>08.00 WIB</strong></p>
+
+      <p>📍 <strong>Bandung</strong></p>
+
+    </div>
+
+  </section>
+
+
+  <!-- COUNTDOWN -->
+  <section class="countdown">
+
+    <h2>Menuju Hari Bahagia</h2>
+
+    <p>14 Agustus 2026</p>
+
+    <div class="timer">
+
+      <div class="time-box">
+        <span id="days">0</span>
+        Hari
+      </div>
+
+      <div class="time-box">
+        <span id="hours">0</span>
+        Jam
+      </div>
+
+      <div class="time-box">
+        <span id="minutes">0</span>
+        Menit
+      </div>
+
+      <div class="time-box">
+        <span id="seconds">0</span>
+        Detik
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LOKASI -->
+  <section class="location">
+
+    <div class="ornament">⌖</div>
+
+    <h2>Lokasi Acara</h2>
+
+    <p>
+      Bandung
+    </p>
+
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Bandung"
+      target="_blank"
+      class="maps-button">
+      Buka Google Maps
+    </a>
+
+  </section>
+
+
+  <!-- RSVP -->
+  <section class="intro">
+
+    <div class="ornament">♡</div>
+
+    <h2>Konfirmasi Kehadiran</h2>
+
+    <p>
+      Kehadiran dan doa restu Bapak/Ibu/Saudara/i
+      merupakan kebahagiaan bagi kami.
+    </p>
+
+    <a
+      href="https://wa.me/6280000000000?text=Assalamu%27alaikum%2C%20saya%20akan%20hadir%20di%20acara%20pernikahan%20Fulan%20%26%20Hani."
+      target="_blank"
+      class="rsvp-button">
+      RSVP via WhatsApp
+    </a>
+
+  </section>
+
+
+  <!-- PENUTUP -->
+  <section class="closing">
+
+    <div class="ornament">❦</div>
+
+    <h2>Terima Kasih</h2>
+
+    <p>
+      Atas doa, restu, dan kehadiran
+      Bapak/Ibu/Saudara/i,
+      kami mengucapkan terima kasih.
+    </p>
+
+    <br>
+
+    <p>
+      Wassalamu'alaikum Warahmatullahi Wabarakatuh
+    </p>
+
+    <br>
+
+    <h3>
+      Fulan & Hani
+    </h3>
+
+  </section>
+
+
+  <footer>
+    © 2026 Fulan & Hani
+  </footer>
+
+
+  <script>
+    const weddingDate = new Date("August 14, 2026 08:00:00").getTime();
+
+    const countdown = setInterval(function () {
+
+      const now = new Date().getTime();
+      const distance = weddingDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
+      );
+
+      const minutes = Math.floor(
+        (distance % (1000 * 60 * 60)) /
+        (1000 * 60)
+      );
+
+      const seconds = Math.floor(
+        (distance % (1000 * 60)) /
+        1000
+      );
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      if (distance < 0) {
+        clearInterval(countdown);
+
+        document.getElementById("days").innerHTML = "0";
+        document.getElementById("hours").innerHTML = "0";
+        document.getElementById("minutes").innerHTML = "0";
+        document.getElementById("seconds").innerHTML = "0";
+      }
+
+    }, 1000);
+  </script>
+
+</body>
+</html>
