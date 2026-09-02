@@ -1,489 +1,792 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Undangan Pernikahan Fulan Cowo & Hani Nurrahmah,S.M.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<title>Fulan & Hani | Wedding Invitation</title>
 
-    body {
-      font-family: Georgia, 'Times New Roman', serif;
-      background: #eef5fb;
-      color: #263746;
-      line-height: 1.7;
-    }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f5f8fc;
+    color: #26384a;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+/* ================= COVER ================= */
+
+.cover {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(18, 54, 82, 0.72),
+            rgba(18, 54, 82, 0.72)
+        ),
+        linear-gradient(135deg, #8fb7d4, #dcebf6);
+
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.cover::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 50%;
+    top: -250px;
+    left: -200px;
+}
+
+.cover::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 50%;
+    bottom: -250px;
+    right: -200px;
+}
+
+.cover-content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+}
+
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.cover h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: .9;
+}
+
+.ampersand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-style: italic;
+    margin: 15px;
+}
+
+.date {
+    margin-top: 35px;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.open-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 14px 32px;
+    border: 1px solid rgba(255,255,255,.7);
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.open-button:hover {
+    background: white;
+    color: #244f70;
+}
+
+/* ================= GENERAL ================= */
+
+.ornament {
+    font-size: 30px;
+    color: #4c7899;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 43px;
+    font-weight: 500;
+    color: #244f70;
+    margin-bottom: 25px;
+}
+
+.text {
+    max-width: 650px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 2;
+    color: #64798b;
+}
+
+/* ================= OPENING ================= */
+
+.opening {
+    background: #f9fbfd;
+}
+
+.bismillah {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #315e7e;
+}
+
+.names {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    color: #244f70;
+    margin: 30px 0;
+}
+
+/* ================= COUPLE ================= */
+
+.couple {
+    background: #e8f1f8;
+}
+
+.couple-grid {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.person {
+    width: 230px;
+}
+
+.person-circle {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #b9d1e2, #edf5fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    color: #315e7e;
+}
+
+.person h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: #244f70;
+    margin-top: 20px;
+}
+
+.person p {
+    font-size: 12px;
+    color: #718595;
+    margin-top: 8px;
+}
+
+.divider {
+    margin: 25px auto;
+    width: 40px;
+    border-top: 1px solid #91aabd;
+}
+
+/* ================= EVENTS ================= */
+
+.events {
+    background: #f9fbfd;
+}
+
+.event-card {
+    background: white;
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(40,70,90,.10);
+}
+
+.event-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #244f70;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    margin: 8px;
+    font-size: 13px;
+    color: #627789;
+}
+
+/* ================= COUNTDOWN ================= */
+
+.countdown {
+    background: #244f70;
+    color: white;
+}
+
+.countdown h2 {
+    color: white;
+}
+
+.countdown-date {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.time {
+    min-width: 85px;
+    padding: 18px 12px;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 12px;
+}
+
+.time strong {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+}
+
+.time span {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/* ================= LOCATION ================= */
+
+.location {
+    background: #e8f1f8;
+}
+
+.map-button,
+.rsvp-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background: #244f70;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* ================= RSVP ================= */
+
+.rsvp {
+    background: #f9fbfd;
+}
+
+/* ================= CLOSING ================= */
+
+.closing {
+    background:
+        linear-gradient(
+            rgba(18,54,82,.75),
+            rgba(18,54,82,.75)
+        ),
+        linear-gradient(135deg,#9bbbd3,#dcebf6);
+
+    color: white;
+}
+
+.closing h2 {
+    color: white;
+}
+
+.closing .text {
+    color: rgba(255,255,255,.85);
+}
+
+.signature {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #173a55;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 10px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:600px) {
 
     section {
-      padding: 70px 20px;
-      text-align: center;
-    }
-
-    .cover {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background:
-        linear-gradient(rgba(20, 70, 110, 0.65), rgba(20, 70, 110, 0.65)),
-        linear-gradient(135deg, #8db8d8, #dcecf8);
-      color: white;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .cover::before,
-    .cover::after {
-      content: "";
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      border: 1px solid rgba(255,255,255,0.35);
-      border-radius: 50%;
-    }
-
-    .cover::before {
-      top: -100px;
-      left: -100px;
-    }
-
-    .cover::after {
-      bottom: -100px;
-      right: -100px;
-    }
-
-    .cover-content {
-      max-width: 700px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .small-title {
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      font-size: 14px;
-      margin-bottom: 25px;
+        padding: 65px 20px;
     }
 
     .cover h1 {
-      font-size: 52px;
-      font-weight: normal;
-      margin-bottom: 15px;
-    }
-
-    .and {
-      font-size: 24px;
-      font-style: italic;
-      margin: 5px 0;
-    }
-
-    .cover-date {
-      margin-top: 30px;
-      font-size: 18px;
-    }
-
-    .open-button {
-      display: inline-block;
-      margin-top: 35px;
-      padding: 13px 30px;
-      border: 1px solid white;
-      border-radius: 30px;
-      color: white;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .open-button:hover {
-      background: white;
-      color: #24577d;
-    }
-
-    .intro {
-      background: #f8fbfe;
-    }
-
-    .ornament {
-      color: #477da5;
-      font-size: 30px;
-      margin-bottom: 20px;
+        font-size: 55px;
     }
 
     h2 {
-      color: #24577d;
-      font-size: 32px;
-      font-weight: normal;
-      margin-bottom: 20px;
+        font-size: 37px;
     }
 
     .names {
-      font-size: 35px;
-      color: #24577d;
-      margin: 25px 0;
+        font-size: 38px;
     }
 
-    .quote {
-      max-width: 650px;
-      margin: auto;
-      font-style: italic;
-      color: #60798c;
+    .couple-grid {
+        gap: 40px;
     }
-
-    .event {
-      background: #e5f0f8;
-    }
-
-    .event-card {
-      max-width: 650px;
-      margin: 20px auto;
-      background: white;
-      padding: 35px 25px;
-      border-radius: 18px;
-      box-shadow: 0 8px 25px rgba(50, 90, 120, 0.12);
-    }
-
-    .event-card h3 {
-      color: #24577d;
-      font-size: 25px;
-      margin-bottom: 15px;
-    }
-
-    .event-card p {
-      margin: 7px 0;
-    }
-
-    .countdown {
-      background: #24577d;
-      color: white;
-    }
-
-    .countdown h2 {
-      color: white;
-    }
-
-    .timer {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-
-    .time-box {
-      background: rgba(255,255,255,0.15);
-      padding: 15px 20px;
-      border-radius: 12px;
-      min-width: 80px;
-    }
-
-    .time-box span {
-      display: block;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .location {
-      background: #f8fbfe;
-    }
-
-    .maps-button,
-    .rsvp-button {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 28px;
-      border-radius: 30px;
-      background: #24577d;
-      color: white;
-      text-decoration: none;
-    }
-
-    .closing {
-      background:
-        linear-gradient(rgba(20, 70, 110, 0.75), rgba(20, 70, 110, 0.75)),
-        linear-gradient(135deg, #8db8d8, #dcecf8);
-      color: white;
-    }
-
-    .closing h2 {
-      color: white;
-    }
-
-    footer {
-      background: #183e59;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 13px;
-    }
-
-    @media (max-width: 600px) {
-      .cover h1 {
-        font-size: 40px;
-      }
-
-      .names {
-        font-size: 29px;
-      }
-
-      h2 {
-        font-size: 27px;
-      }
-    }
-  </style>
+}
+</style>
 </head>
+
 
 <body>
 
-  <!-- COVER -->
-  <section class="cover">
+<!-- COVER -->
+
+<section class="cover">
+
     <div class="cover-content">
 
-      <div class="small-title">
-        The Wedding Of
-      </div>
+        <div class="subtitle">
+            The Wedding Of
+        </div>
 
-      <h1>Fulan Cowo</h1>
+        <h1>Fulan</h1>
 
-      <div class="and">&</div>
+        <div class="ampersand">&</div>
 
-      <h1>Hani Nurrahmah, S.M.</h1>
+        <h1>Hani</h1>
 
-      <div class="cover-date">
-        13 Agustus 2026
-      </div>
+        <div class="date">
+            13 • 14 AGUSTUS 2026
+        </div>
 
-      <a href="#undangan" class="open-button">
-        Buka Undangan
-      </a>
-
-    </div>
-  </section>
-
-
-  <!-- PEMBUKA -->
-  <section class="intro" id="undangan">
-
-    <div class="ornament">❦</div>
-
-    <h2>Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
-
-    <p class="quote">
-      Dengan memohon rahmat dan ridho Allah SWT,
-      kami bermaksud mengundang Bapak/Ibu/Saudara/i
-      untuk hadir dalam acara pernikahan kami.
-    </p>
-
-    <div class="names">
-      Fulan & Hani
-    </div>
-
-    <p>
-      Merupakan suatu kehormatan dan kebahagiaan bagi kami
-      apabila Bapak/Ibu/Saudara/i berkenan hadir
-      dan memberikan doa restu.
-    </p>
-
-  </section>
-
-
-  <!-- ACARA AKAD -->
-  <section class="event">
-
-    <div class="ornament">✦</div>
-
-    <h2>Akad Nikah</h2>
-
-    <div class="event-card">
-
-      <h3>Akad Nikah</h3>
-
-      <p>📅 <strong>13 Agustus 2026</strong></p>
-
-      <p>⏰ <strong>08.00 WIB</strong></p>
-
-      <p>📍 <strong>Bandung</strong></p>
+        <a href="#opening" class="open-button">
+            BUKA UNDANGAN
+        </a>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- RESEPSI -->
-  <section class="event">
+<!-- OPENING -->
 
-    <div class="ornament">❦</div>
+<section class="opening" id="opening">
 
-    <h2>Resepsi Pernikahan</h2>
+    <div class="container">
 
-    <div class="event-card">
+        <div class="ornament">❦</div>
 
-      <h3>Resepsi</h3>
+        <div class="bismillah">
+            بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+        </div>
 
-      <p>📅 <strong>14 Agustus 2026</strong></p>
+        <h2>
+            Assalamu'alaikum
+            Warahmatullahi Wabarakatuh
+        </h2>
 
-      <p>⏰ <strong>08.00 WIB</strong></p>
+        <p class="text">
+            Dengan memohon rahmat dan ridho Allah SWT,
+            kami bermaksud mengundang Bapak/Ibu/Saudara/i
+            untuk hadir dalam acara pernikahan kami.
+        </p>
 
-      <p>📍 <strong>Bandung</strong></p>
+        <div class="names">
+            Fulan & Hani
+        </div>
 
-    </div>
-
-  </section>
-
-
-  <!-- COUNTDOWN -->
-  <section class="countdown">
-
-    <h2>Menuju Hari Bahagia</h2>
-
-    <p>14 Agustus 2026</p>
-
-    <div class="timer">
-
-      <div class="time-box">
-        <span id="days">0</span>
-        Hari
-      </div>
-
-      <div class="time-box">
-        <span id="hours">0</span>
-        Jam
-      </div>
-
-      <div class="time-box">
-        <span id="minutes">0</span>
-        Menit
-      </div>
-
-      <div class="time-box">
-        <span id="seconds">0</span>
-        Detik
-      </div>
+        <p class="text">
+            Merupakan suatu kehormatan dan kebahagiaan
+            bagi kami apabila Bapak/Ibu/Saudara/i
+            berkenan hadir dan memberikan doa restu.
+        </p>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- LOKASI -->
-  <section class="location">
+<!-- COUPLE -->
 
-    <div class="ornament">⌖</div>
+<section class="couple">
 
-    <h2>Lokasi Acara</h2>
+    <div class="container">
 
-    <p>
-      Bandung
-    </p>
+        <div class="ornament">♡</div>
 
-    <a
-      href="https://www.google.com/maps/search/?api=1&query=Bandung"
-      target="_blank"
-      class="maps-button">
-      Buka Google Maps
-    </a>
+        <h2>
+            Mempelai
+        </h2>
 
-  </section>
+        <p class="text">
+            Dengan penuh rasa syukur, kami mempersembahkan
+            kedua mempelai yang akan mengarungi kehidupan
+            bersama.
+        </p>
 
+        <div class="couple-grid">
 
-  <!-- RSVP -->
-  <section class="intro">
+            <div class="person">
 
-    <div class="ornament">♡</div>
+                <div class="person-circle">
+                    F
+                </div>
 
-    <h2>Konfirmasi Kehadiran</h2>
+                <h3>
+                    Fulan
+                </h3>
 
-    <p>
-      Kehadiran dan doa restu Bapak/Ibu/Saudara/i
-      merupakan kebahagiaan bagi kami.
-    </p>
+                <div class="divider"></div>
 
-    <a
-      href="https://wa.me/6280000000000?text=Assalamu%27alaikum%2C%20saya%20akan%20hadir%20di%20acara%20pernikahan%20Fulan%20%26%20Hani."
-      target="_blank"
-      class="rsvp-button">
-      RSVP via WhatsApp
-    </a>
+                <p>
+                    Putra dari<br>
+                    Bapak & Ibu
+                </p>
 
-  </section>
+            </div>
 
 
-  <!-- PENUTUP -->
-  <section class="closing">
+            <div class="person">
 
-    <div class="ornament">❦</div>
+                <div class="person-circle">
+                    H
+                </div>
 
-    <h2>Terima Kasih</h2>
+                <h3>
+                    Hani
+                </h3>
 
-    <p>
-      Atas doa, restu, dan kehadiran
-      Bapak/Ibu/Saudara/i,
-      kami mengucapkan terima kasih.
-    </p>
+                <div class="divider"></div>
 
-    <br>
+                <p>
+                    Putri dari<br>
+                    Bapak & Ibu
+                </p>
 
-    <p>
-      Wassalamu'alaikum Warahmatullahi Wabarakatuh
-    </p>
+            </div>
 
-    <br>
+        </div>
 
-    <h3>
-      Fulan & Hani
-    </h3>
+    </div>
 
-  </section>
+</section>
 
 
-  <footer>
+<!-- EVENTS -->
+
+<section class="events">
+
+    <div class="container">
+
+        <div class="ornament">✦</div>
+
+        <h2>
+            Waktu & Tempat
+        </h2>
+
+
+        <div class="event-card">
+
+            <h3>
+                Akad Nikah
+            </h3>
+
+            <p>
+                📅 13 Agustus 2026
+            </p>
+
+            <p>
+                ⏰ 08.00 WIB
+            </p>
+
+            <p>
+                📍 Bandung
+            </p>
+
+        </div>
+
+
+        <div class="event-card">
+
+            <h3>
+                Resepsi Pernikahan
+            </h3>
+
+            <p>
+                📅 14 Agustus 2026
+            </p>
+
+            <p>
+                ⏰ 08.00 WIB
+            </p>
+
+            <p>
+                📍 Bandung
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COUNTDOWN -->
+
+<section class="countdown">
+
+    <div class="container">
+
+        <div class="ornament">
+            ⏳
+        </div>
+
+        <h2>
+            Menuju Hari Bahagia
+        </h2>
+
+        <div class="countdown-date">
+            14 Agustus 2026 • 08.00 WIB
+        </div>
+
+
+        <div class="timer">
+
+            <div class="time">
+                <strong id="days">0</strong>
+                <span>HARI</span>
+            </div>
+
+            <div class="time">
+                <strong id="hours">0</strong>
+                <span>JAM</span>
+            </div>
+
+            <div class="time">
+                <strong id="minutes">0</strong>
+                <span>MENIT</span>
+            </div>
+
+            <div class="time">
+                <strong id="seconds">0</strong>
+                <span>DETIK</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LOCATION -->
+
+<section class="location">
+
+    <div class="container">
+
+        <div class="ornament">
+            ⌖
+        </div>
+
+        <h2>
+            Lokasi Acara
+        </h2>
+
+        <p class="text">
+            Bandung
+        </p>
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=Bandung"
+            target="_blank"
+            class="map-button">
+
+            BUKA GOOGLE MAPS
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- RSVP -->
+
+<section class="rsvp">
+
+    <div class="container">
+
+        <div class="ornament">
+            ♡
+        </div>
+
+        <h2>
+            Konfirmasi Kehadiran
+        </h2>
+
+        <p class="text">
+            Kehadiran dan doa restu Bapak/Ibu/Saudara/i
+            merupakan kebahagiaan bagi kami.
+        </p>
+
+        <a
+            href="https://wa.me/6280000000000?text=Assalamu%27alaikum%2C%20saya%20akan%20hadir%20di%20acara%20pernikahan%20Fulan%20%26%20Hani."
+            target="_blank"
+            class="rsvp-button">
+
+            RSVP VIA WHATSAPP
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CLOSING -->
+
+<section class="closing">
+
+    <div class="container">
+
+        <div class="ornament">
+            ❦
+        </div>
+
+        <h2>
+            Terima Kasih
+        </h2>
+
+        <p class="text">
+            Atas doa, restu, dan kehadiran
+            Bapak/Ibu/Saudara/i,
+            kami mengucapkan terima kasih.
+        </p>
+
+        <div class="signature">
+            Fulan & Hani
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
     © 2026 Fulan & Hani
-  </footer>
+
+</footer>
 
 
-  <script>
-    const weddingDate = new Date("August 14, 2026 08:00:00").getTime();
+<script>
 
-    const countdown = setInterval(function () {
+const weddingDate =
+    new Date("August 14, 2026 08:00:00").getTime();
 
-      const now = new Date().getTime();
-      const distance = weddingDate - now;
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) /
-        (1000 * 60 * 60)
-      );
+const countdown = setInterval(function() {
 
-      const minutes = Math.floor(
-        (distance % (1000 * 60 * 60)) /
-        (1000 * 60)
-      );
+    const now = new Date().getTime();
 
-      const seconds = Math.floor(
-        (distance % (1000 * 60)) /
-        1000
-      );
+    const distance = weddingDate - now;
 
-      document.getElementById("days").innerHTML = days;
-      document.getElementById("hours").innerHTML = hours;
-      document.getElementById("minutes").innerHTML = minutes;
-      document.getElementById("seconds").innerHTML = seconds;
 
-      if (distance < 0) {
+    const days =
+        Math.floor(
+            distance / (1000 * 60 * 60 * 24)
+        );
+
+    const hours =
+        Math.floor(
+            (distance % (1000 * 60 * 60 * 24))
+            / (1000 * 60 * 60)
+        );
+
+    const minutes =
+        Math.floor(
+            (distance % (1000 * 60 * 60))
+            / (1000 * 60)
+        );
+
+    const seconds =
+        Math.floor(
+            (distance % (1000 * 60))
+            / 1000
+        );
+
+
+    document.getElementById("days").innerHTML =
+        Math.max(days, 0);
+
+    document.getElementById("hours").innerHTML =
+        Math.max(hours, 0);
+
+    document.getElementById("minutes").innerHTML =
+        Math.max(minutes, 0);
+
+    document.getElementById("seconds").innerHTML =
+        Math.max(seconds, 0);
+
+
+    if (distance < 0) {
+
         clearInterval(countdown);
 
-        document.getElementById("days").innerHTML = "0";
-        document.getElementById("hours").innerHTML = "0";
-        document.getElementById("minutes").innerHTML = "0";
-        document.getElementById("seconds").innerHTML = "0";
-      }
+    }
 
-    }, 1000);
-  </script>
+}, 1000);
+
+</script>
 
 </body>
 </html>
